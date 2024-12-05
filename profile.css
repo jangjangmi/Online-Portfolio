@@ -1,0 +1,349 @@
+body {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    background-color: #000;
+}
+
+/* Main Content */
+.h1 {
+    margin-top: 30px;
+    margin-left: 5%;
+    font-family: 'Times New Roman';
+    font-size: 45px;
+}
+
+.about {
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+#girl {
+    transition: transform 1s ease;
+}
+
+#girl:hover {
+    transform: scale(1.5);
+}
+
+.intro {
+    border-style: groove;
+    border-color: aqua;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    font-size: 23px;
+    margin-left: 10%;
+}
+
+.h2 {
+    color: aqua;
+    border-style: inset;
+    border-color: aqua;
+    box-shadow: whitesmoke;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 450px;
+    padding: 25px;
+}
+
+.move {
+    margin-top: 11%;
+    margin-left: 5%;
+    border-style: groove;
+    transition: transform 0.2s ease-in-out;
+}
+
+.move:hover {
+    transform: scale(1.1);
+    background-color: aqua;
+}
+
+.moves {
+    float: left;
+    margin-top: 35%;
+    border-style: groove;
+    transition: transform 0.2s ease-in-out;
+}
+
+.moves:hover {
+    transform: scale(1.1);
+    background-color: aqua;
+}
+
+.choices {
+    margin-left: 5%;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.description {
+    margin-left: 5%;
+    font-family: Tahoma;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.myPic {
+    margin-right: 3%;
+    float: right;
+    opacity: 90%;
+    border-radius: 50%;
+    transition: transform 0.6s ease;
+}
+
+.myPic:hover {
+    transform: scale(1.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 93vh; 
+}
+
+.content {
+    flex: 1; 
+}
+
+.fb {
+    padding: 1px;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+/* Navbar Styles */
+.nav-icon {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.nav-options {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: #15018b;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.nav-options a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.nav-options a:hover {
+    color: aqua;
+}
+
+#link {
+    margin-left: 4px;
+    margin-top: 20px;
+}
+
+.hwan {
+    text-align: center;
+}
+
+.hahahas {
+    margin-left: 15px;
+    transition: transform 1s ease;
+}
+
+.hahahas:hover {
+    transform: rotateZ(360deg);
+}
+
+/*proj hover*/
+
+.proj {
+    margin-left: 40%;
+}
+
+.c1 {
+    margin-top: 30px;
+    transition: transform 1s ease;
+}
+
+.c1:hover {
+    transform: scale(1.1);
+}
+
+.c2 {
+    transition: transform 1s ease;
+}
+
+.c2:hover {
+    transform: scale(1.1);
+}
+
+.c3 {
+    transition: transform 1s ease;
+}
+
+.c3:hover {
+    transform: scale(1.1);
+}
+
+.c4 {
+    transition: transform 1s ease;
+}
+
+.c4:hover {
+    transform: scale(1.1);
+}
+
+/*Ripple effect*/
+
+.ripple-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none; 
+}
+
+.ripple {
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 100%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out forwards;
+    pointer-events: none; 
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(0.5); 
+        opacity: 0;
+    }
+}
+
+/* Form Styles */
+
+form {
+    max-width: 400px;
+    margin-left: 30px;
+    border-radius: 3px;
+}
+
+input, textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.butt {
+    padding: 10px 15px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.show {
+    margin-top: 5%;
+    margin-right: 25%;
+    float: right;
+    transition: transform 6s ease;
+}
+
+.show:hover {
+    transform: rotateZ(360deg);
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+    body {
+        margin: 10px; 
+    }
+
+    .intro, .h2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .proj {
+        margin-left: 20%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 35px;
+    }
+
+    .intro, .h2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .myPic {
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .proj {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 28px;
+        margin-left: 2%;
+    }
+
+    .intro, .h2, .choices {
+        margin-left: 2%;
+        width: 96%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .proj {
+        margin-left: 5%;
+    }
+}

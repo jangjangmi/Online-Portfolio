@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <form action="index.html">
+        <Button>
+            <i class="fa fa-mail-reply"></i>
+        </Button>
+    </form>
+    <h1 style="margin-left: 42%; color: aqua; border-style: dotted; border-color: aqua; width: 100%; max-width: 200px;">-Meow zone-</h1>
+
+    <img src="meow.png" alt="meow" style="height: 50%; width: 50%; margin-left: 25%;">
+
+ <script>
+
+//ripple effect
+
+document.body.addEventListener('click', function(e) {
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+
+    const size = 150; 
+    ripple.style.width = ripple.style.height = `${size}px`;
+
+    const x = e.clientX - size / 2; // Center the ripple
+    const y = e.clientY - size / 2; // Center the ripple
+
+    ripple.style.left = `${x}px`;
+    ripple.style.top = `${y}px`;
+
+    document.body.appendChild(ripple);
+
+    setTimeout(() => {
+        ripple.remove();
+    }, 600);
+});
+
+ </script>
+</body>
+</html>

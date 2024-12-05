@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <section id="Head">
+
+    <div class="main-container">
+        <div class="content">
+
+
+    <div class="nav-icon" id="navToggle">
+        <i class="fa fa-navicon"></i>
+    </div>
+
+    <div class="nav-options" id="navOptions">
+        <a href="Index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="More.html">Contacts</a>
+    </div>
+    
+    <img src="myPics.png" alt="myPic" class="myPic">
+
+    <h1 class="h1"><span><a href="meow.html" style="color: white;">Hi</a></span>, I'm <span style="color: aqua;">Princess Ysha</span><span><img src="laugh.png" alt="happy" class="hahahas"></span></h1>
+
+    
+    <p class="intro">I am an aspiring IT professional specializing in Frontend Development, with a strong 
+        foundation in creating websites using HTML, CSS, and JavaScript, and some experience in Java. My journey 
+        in programming began during my senior high school years, where I developed a solid understanding of web 
+        development fundamentals. This foundation has been further enhanced by my college education, allowing me 
+        to refine my skills and gain deeper insights into Frontend Development. I am passionate about building 
+        user-friendly and visually appealing web interfaces that provide an excellent user experience.
+    </p>
+
+        <a href="#aboutMe">
+            <button class="move">
+             About me
+            </button> 
+         </a>
+        
+
+</section>
+
+    <section id="aboutMe">
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; margin-top: 10%;" class="h2">This will show you stuff about me.</h2>
+
+        <img src="service-call.png" alt="Samp" style="float: right; height: 20%; width: 20%; margin-right: 15%;margin-bottom: 10%;" id="girl">
+        
+        <a href="#Head">
+            <button class="moves">
+                Go Back up
+            </button>
+           </a>
+        
+        <p id="about" onclick="showChoices()" class="about">
+            <i class="fas fa-info-circle"><span style="font-family: Tahoma; font-size: 20px;">About me:</span><span style="color: darkgrey;  font-size: 15px; font-family: 'Times New Roman';"> (Press this)</span></i>
+        </p>
+    
+        <div id="choices" style="display: none;" class="choices">
+            <button onclick="toggleDescription('choice1')">
+               <i class="fa fa-address-card"><span style="font-family: Tahoma; font-size: 13px;"> Name and Address</span></i>
+            </button>
+            <div id="choice1-desc" class="description" style="display: none;">
+                <p><span style="color: aqua;">Princess Ysha Larainne S. Panizares</span> is my full name</p>
+                <p><span style="color: aqua;">Address:</span> I'm from the Philippines, living in Sto. Tomas, Candon City, Ilocos Sur!</p>
+            </div>
+    
+            <button onclick="toggleDescription('choice2')">
+                <i class="fa fa-graduation-cap"><span style="font-family: Tahoma; font-size: 13px;"> Education Background</span></i>
+            </button>
+            <div id="choice2-desc" class="description" style="display: none;">
+                <p><span style="color: aqua;">Elementary:</span> Sto. Tomas Elementary School and Don Bosco School</p>
+                <p><span style="color: aqua;">High School:</span> Sto. Tomas National High School</p>
+                <p><span style="color: aqua;">Senior High School:</span> Candon National High School</p>
+            </div>
+    
+            <button onclick="toggleDescription('choice3')">
+                <i class="fa fa-code"><span style="font-family: Tahoma; font-size: 13px;"> Programming Skills</span></i>
+            </button>
+            <div id="choice3-desc" class="description" style="display: none;">
+                <p><span><img src="html.png" alt="">:</span> HTML is one of the languages I love to use when making websites.</p>
+                <p><span><img src="css.png" alt="">:</span> Though not a full programming language, I love using CSS for styling.</p>
+                <p><span><img src="web.png" alt="">:</span> I find it challenging sometimes and im not very proficient, but I enjoy using it for interactivity.</p>
+            </div>
+        </div>
+
+
+        
+    </section>
+    
+
+</div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

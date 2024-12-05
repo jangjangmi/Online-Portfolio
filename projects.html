@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <form action="index.html">
+        <Button>
+            <i class="fa fa-mail-reply"></i>
+        </Button>
+    </form>
+
+    <div class="nav-icon" id="navToggle">
+        <i class="fa fa-navicon"></i>
+    </div>
+    <div class="nav-options" id="navOptions">
+        <a href="Index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="More.html">Contacts</a>
+    </div>
+
+    
+    <h1 style=" text-align: center;">MY <span style="color: aqua;">PROJECTS</span></h1>
+    <p style=" text-align: center;">These are my projects, i made some from back then, and i made some for basis. </p>
+
+    <div class="proj">
+        <button class="c1">
+            <a href="https://jangjangmi.github.io/sampsBG/" style="color: aqua; font-size: 30px;">Background Sample 1</a>
+            </button>
+        <br>
+            <button class="c2">
+                <a href="https://jangjangmi.github.io/bgs/" style="color: aqua; font-size: 30px;">Background Sample 2</a>
+            </button>
+        <br>
+                <button class="c3">
+                    <a href="https://jangjangmi.github.io/LoginForm/" style="color: aqua; font-size: 30px;">Login Form</a>
+                </button>
+            <br>
+                <button class="c4">
+                    <a href="https://jangjangmi.github.io/changiingFollowers/" style="color: aqua; font-size: 30px;">Image cursor</a>
+                </button>
+    </div>
+
+    <img src="laugh.png" alt="happy" class="hahahas">
+
+ <script>
+
+//ripple effect
+
+document.body.addEventListener('click', function(e) {
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+
+    const size = 150; 
+    ripple.style.width = ripple.style.height = `${size}px`;
+
+    const x = e.clientX - size / 2; // Center the ripple
+    const y = e.clientY - size / 2; // Center the ripple
+
+    ripple.style.left = `${x}px`;
+    ripple.style.top = `${y}px`;
+
+    document.body.appendChild(ripple);
+
+    setTimeout(() => {
+        ripple.remove();
+    }, 600);
+});
+
+//navbar
+
+const navToggle = document.getElementById('navToggle');
+const navOptions = document.getElementById('navOptions');
+
+navToggle.addEventListener('click', () => {
+    navOptions.style.display = navOptions.style.display === 'none' || navOptions.style.display === '' ? 'flex' : 'none';
+});
+
+ </script>
+</body>
+</html>
